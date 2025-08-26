@@ -4,9 +4,9 @@ export function Contact() {
       <div class="container">
         <div class="contact-header">
           <h2 class="section-title">Let's Connect</h2>
-          <p class="section-description">
+          <!-- <p class="section-description">
             Open to new opportunities • Ready to discuss how I can contribute to your team
-          </p>
+          </p> -->
         </div>
 
         <!-- Main Contact Section -->

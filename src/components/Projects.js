@@ -43,7 +43,7 @@ export function Projects() {
                 <span class="tech-item">Redis</span>
               </div>
               <div class="project-actions">
-                <a href="https://claims.hizuno.com/" class="project-btn primary">
+                <a href="https://claims.hizuno.com/" class="project-btn primary" target="_blank" >
                   <i class="fas fa-external-link-alt"></i>
                   View Details
                 </a>
@@ -82,7 +82,7 @@ export function Projects() {
                 <span class="tech-item">Prisma JS</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/Devdarji/Django-ChatGPT.git" class="project-btn secondary">
+                <a href="https://github.com/Devdarji/Django-ChatGPT.git" class="project-btn secondary" target="_blank" >
                   <i class="fab fa-github"></i>
                   Code
                 </a>
@@ -120,7 +120,7 @@ export function Projects() {
                 <span class="tech-item">Web Scraping</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/Devdarji/movie" class="project-btn secondary">
+                <a href="https://github.com/Devdarji/movie" class="project-btn secondary" target="_blank" >
                   <i class="fab fa-github"></i>
                   Code
                 </a>
@@ -158,7 +158,7 @@ export function Projects() {
                 <span class="tech-item">Bootstrap</span>
               </div>
               <div class="project-actions">
-                <a href="#" class="project-btn secondary">
+                <a href="#" class="project-btn secondary" target="_blank">
                   <i class="fab fa-github"></i>
                   Code
                 </a>
