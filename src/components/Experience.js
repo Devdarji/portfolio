@@ -46,23 +46,23 @@ export function Experience() {
                 <ul>
                   <li>
                     <i class="fas fa-building"></i>
-                    <strong>Client: Zuno Insurance</strong> - Developing features and enhancements for motor insurance products
+                    <span><strong>Client: Zuno Insurance</strong> - Developing features and enhancements for motor insurance products</span>
                   </li>
                   <li>
                     <i class="fas fa-cogs"></i>
-                    Developed <strong>Claims Management System</strong> from ground up using Django, PostgreSQL, and RabbitMQ
+                    <span>Developed <strong>Claims Management System</strong> from ground up using Django, PostgreSQL, and RabbitMQ</span>
                   </li>
                   <li>
                     <i class="fas fa-sitemap"></i>
-                    Architecting, designing, and developing <strong>Backend APIs and Microservices</strong>
+                    <span>Architecting, designing, and developing <strong>Backend APIs and Microservices</strong></span>
                   </li>
                   <li>
                     <i class="fas fa-code"></i>
-                    Built and maintained <strong>React APP, Node service, and Django Backend</strong> applications
+                    <span>Built and maintained <strong>React APP, Node service, and Django Backend</strong> applications</span>
                   </li>
                   <li>
                     <i class="fas fa-shield"></i>
-                    Implemented <strong>IRDAI compliance</strong> features ensuring regulatory adherence for insurance operations
+                    <span>Implemented <strong>IRDAI compliance</strong> features ensuring regulatory adherence for insurance operations</span>
                   </li>
                   <li>
                     <i class="fas fa-database"></i>
@@ -137,9 +137,9 @@ export function Experience() {
               </div>
               <div class="job-description">
                 <p>
-                  <strong>Software Engineer</strong> focused on web development using Python and Django framework. 
+                  <span><strong>Software Engineer</strong> focused on web development using Python and Django framework. 
                   Specialized in creating modern, professional, and responsive websites optimized for 
-                  performance, SEO, and security.
+                  performance, SEO, and security.</span>
                 </p>
               </div>
               <div class="achievements">
@@ -147,51 +147,51 @@ export function Experience() {
                 <ul>
                   <li>
                     <i class="fas fa-landmark"></i>                    
-                    Worked on <strong>temple website development</strong> using Python (Django) framework
+                    <span>Worked on <strong>temple website development</strong> using Python (Django) framework</span>
                   </li>
                   <li>
                     <i class="fas fa-laptop-code"></i>
-                    Created <strong>modern, professional, and responsive websites</strong> with optimal user experience
+                    <span>Created <strong>modern, professional, and responsive websites</strong> with optimal user experience</span>
                   </li>
                   <li>
                     <i class="fas fa-rocket"></i>
-                    Optimized websites for <strong>speed, SEO, and security</strong> best practices
+                    <span>Optimized websites for <strong>speed, SEO, and security</strong> best practices</span>
                   </li>
                   <li>
                     <i class="fas fa-mobile-alt"></i>
-                    Utilized Django expertise to build <strong>responsive and scalable</strong> web applications
+                    <span>Utilized Django expertise to build <strong>responsive and scalable</strong> web applications</span>
                   </li>
                   <li>
                     <i class="fas fa-search"></i>
-                    Implemented <strong>SEO optimization</strong> techniques improving search rankings by 60%
+                    <span>Implemented <strong>SEO optimization</strong> techniques improving search rankings by 60%</span>
                   </li>
                   <li>
                     <i class="fas fa-tachometer-alt"></i>
-                    Achieved <strong>90+ PageSpeed scores</strong> through image optimization and code minification
+                    <span>Achieved <strong>90+ PageSpeed scores</strong> through image optimization and code minification</span>
                   </li>
                   <li>
                     <i class="fas fa-shield-alt"></i>
-                    Implemented <strong>security best practices</strong> including CSRF protection and secure authentication
+                    <span>Implemented <strong>security best practices</strong> including CSRF protection and secure authentication</span>
                   </li>
                   <li>
                     <i class="fas fa-database"></i>
-                    Designed efficient <strong>database schemas</strong> and optimized queries for better performance
+                    <span>Designed efficient <strong>database schemas</strong> and optimized queries for better performance</span>
                   </li>
                   <li>
                     <i class="fas fa-paint-brush"></i>
-                    Created <strong>custom Django templates</strong> with Bootstrap for consistent UI/UX across all pages
+                    <span>Created <strong>custom Django templates</strong> with Bootstrap for consistent UI/UX across all pages</span>
                   </li>
                   <li>
                     <i class="fas fa-code-branch"></i>
-                    Used <strong>Git version control</strong> for collaborative development and code management
+                    <span>Used <strong>Git version control</strong> for collaborative development and code management</span>
                   </li>
                   <li>
                     <i class="fas fa-users"></i>
-                    Delivered projects on time serving <strong>multiple client requirements</strong> and specifications
+                    <span>Delivered projects on time serving <strong>multiple client requirements</strong> and specifications</span>
                   </li>
                   <li>
                     <i class="fas fa-tools"></i>
-                    Maintained and updated existing websites ensuring <strong>cross-browser compatibility</strong>
+                    <span>Maintained and updated existing websites ensuring <strong>cross-browser compatibility</strong></span>
                   </li>
                 </ul>
               </div>
