@@ -5025,3 +5025,785 @@ body:not(.loaded)::after {
   object-fit: contain;
   background: transparent;
 }
+
+/* Attractive Horizontal Contact Information */
+.contact-info-section {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-info-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed, #06b6d4, #10b981);
+  border-radius: 20px 20px 0 0;
+}
+
+.contact-header-modern {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-title-modern {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.contact-title-modern i {
+  color: #4f46e5;
+  font-size: 1.3rem;
+}
+
+.contact-subtitle-modern {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+/* Horizontal Contact Cards */
+.contact-cards-horizontal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-card-modern {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+  transition: left 0.6s ease;
+}
+
+.contact-card-modern:hover::before {
+  left: 100%;
+}
+
+.contact-card-modern:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+  border-color: transparent;
+}
+
+/* Card specific hover colors */
+.email-card:hover {
+  border-color: #4f46e5;
+  box-shadow: 0 12px 40px rgba(79, 70, 229, 0.2);
+}
+
+.phone-card:hover {
+  border-color: #10b981;
+  box-shadow: 0 12px 40px rgba(16, 185, 129, 0.2);
+}
+
+.location-card:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 12px 40px rgba(245, 158, 11, 0.2);
+}
+
+.card-icon-wrapper {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.email-card .card-icon-wrapper {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+.phone-card .card-icon-wrapper {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.location-card .card-icon-wrapper {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.icon-pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  background: inherit;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    opacity: 0; 
+    transform: translate(-50%, -50%) scale(1); 
+  }
+  50% { 
+    opacity: 0.3; 
+    transform: translate(-50%, -50%) scale(1.2); 
+  }
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.contact-link {
+  color: #4f46e5;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #7c3aed;
+}
+
+.contact-text {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.card-action {
+  display: flex;
+  align-items: center;
+}
+
+.action-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.email-btn {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+.phone-btn {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.action-btn:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.card-status {
+  display: flex;
+  align-items: center;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.status-badge.remote {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+/* Professional Links Row */
+.professional-links-row {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.links-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.links-header h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.links-subtitle {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+  transition: left 0.5s ease;
+}
+
+.profile-link:hover::before {
+  left: 100%;
+}
+
+.linkedin-link:hover {
+  background: #0077b5;
+  color: white;
+  border-color: #0077b5;
+  transform: translateY(-2px);
+}
+
+.github-link:hover {
+  background: #333;
+  color: white;
+  border-color: #333;
+  transform: translateY(-2px);
+}
+
+.twitter-link:hover {
+  background: #1da1f2;
+  color: white;
+  border-color: #1da1f2;
+  transform: translateY(-2px);
+}
+
+.resume-link:hover {
+  background: #7c3aed;
+  color: white;
+  border-color: #7c3aed;
+  transform: translateY(-2px);
+}
+
+.profile-link i {
+  font-size: 1rem;
+}
+
+/* Quick Info Bar */
+.quick-info-bar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  border-radius: 16px;
+  color: white;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.info-item i {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Responsive Design for Contact Info */
+@media (max-width: 768px) {
+  .contact-cards-horizontal {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .contact-card-modern {
+    padding: 1.25rem;
+  }
+  
+  .links-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .quick-info-bar {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .contact-info-section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card-modern {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .card-content {
+    text-align: center;
+  }
+  
+  .links-container {
+    flex-direction: column;
+  }
+  
+  .profile-link {
+    justify-content: center;
+  }
+}
+/* Full Width Contact Section */
+.contact-main-full {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info-section-full {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 24px;
+  padding: 3rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 12px 48px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-info-section-full::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed, #06b6d4, #10b981, #f59e0b, #ef4444);
+  border-radius: 24px 24px 0 0;
+}
+
+/* Full Width Contact Cards Grid */
+.contact-cards-full-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Additional card styles for new cards */
+.response-card:hover {
+  border-color: #06b6d4;
+  box-shadow: 0 12px 40px rgba(6, 182, 212, 0.2);
+}
+
+.availability-card:hover {
+  border-color: #10b981;
+  box-shadow: 0 12px 40px rgba(16, 185, 129, 0.2);
+}
+
+.work-card:hover {
+  border-color: #8b5cf6;
+  box-shadow: 0 12px 40px rgba(139, 92, 246, 0.2);
+}
+
+.response-card .card-icon-wrapper {
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+}
+
+.availability-card .card-icon-wrapper {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.work-card .card-icon-wrapper {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.status-badge.online {
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+}
+
+.status-badge.available {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.status-badge.flexible {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+/* Professional Links Full Section */
+.professional-links-section-full {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #e2e8f0;
+}
+
+.links-grid-full {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.profile-link-full {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #64748b;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-link-full::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+  transition: left 0.6s ease;
+}
+
+.profile-link-full:hover::before {
+  left: 100%;
+}
+
+.profile-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.linkedin-link .profile-icon {
+  background: linear-gradient(135deg, #0077b5, #005885);
+}
+
+.github-link .profile-icon {
+  background: linear-gradient(135deg, #333, #000);
+}
+
+.twitter-link .profile-icon {
+  background: linear-gradient(135deg, #1da1f2, #0d8bd9);
+}
+
+.resume-link .profile-icon {
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+}
+
+.profile-content {
+  flex: 1;
+}
+
+.profile-content h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.profile-content span {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.profile-action {
+  font-size: 1rem;
+  color: #94a3b8;
+  transition: all 0.3s ease;
+}
+
+.profile-link-full:hover .profile-action {
+  color: white;
+  transform: translateX(4px);
+}
+
+.linkedin-link:hover {
+  background: #0077b5;
+  color: white;
+  border-color: #0077b5;
+  transform: translateY(-4px);
+}
+
+.github-link:hover {
+  background: #333;
+  color: white;
+  border-color: #333;
+  transform: translateY(-4px);
+}
+
+.twitter-link:hover {
+  background: #1da1f2;
+  color: white;
+  border-color: #1da1f2;
+  transform: translateY(-4px);
+}
+
+.resume-link:hover {
+  background: #7c3aed;
+  color: white;
+  border-color: #7c3aed;
+  transform: translateY(-4px);
+}
+
+.linkedin-link:hover .profile-content h5,
+.linkedin-link:hover .profile-content span,
+.github-link:hover .profile-content h5,
+.github-link:hover .profile-content span,
+.twitter-link:hover .profile-content h5,
+.twitter-link:hover .profile-content span,
+.resume-link:hover .profile-content h5,
+.resume-link:hover .profile-content span {
+  color: white;
+}
+
+/* Call to Action Bar */
+.cta-bar-full {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-bar-full::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: float 10s ease-in-out infinite;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-content h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cta-content p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-btn.primary {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.cta-btn.primary:hover {
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.cta-btn.secondary {
+  background: white;
+  color: #4f46e5;
+  border: 1px solid white;
+}
+
+.cta-btn.secondary:hover {
+  background: #f8fafc;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design for Full Width */
+@media (max-width: 1024px) {
+  .contact-cards-full-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .links-grid-full {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info-section-full {
+    padding: 2rem;
+  }
+  
+  .contact-cards-full-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .links-grid-full {
+    grid-template-columns: 1fr;
+  }
+  
+  .professional-links-section-full {
+    padding: 1.5rem;
+  }
+  
+  .cta-bar-full {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  
+  .cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .cta-btn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card-modern {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .card-content {
+    text-align: center;
+  }
+  
+  .profile-link-full {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .profile-content {
+    text-align: center;
+  }
+}
+/* Essential Contact Cards Grid (3 cards) */
+.contact-cards-essential-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Responsive for essential grid */
+@media (max-width: 768px) {
+  .contact-cards-essential-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-cards-essential-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
