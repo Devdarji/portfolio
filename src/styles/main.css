@@ -5793,11 +5793,308 @@ body:not(.loaded)::after {
   margin-bottom: 3rem;
 }
 
-/* Responsive for essential grid */
+/* Mobile-First Contact Design - Much Better Layout */
 @media (max-width: 768px) {
+  .contact-info-section-full {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  }
+  
+  .contact-header-modern {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .contact-title-modern {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-subtitle-modern {
+    font-size: 0.95rem;
+    color: #64748b;
+  }
+  
+  /* Mobile Contact Cards - Completely New Design */
   .contact-cards-essential-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-card-modern {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-card-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  }
+  
+  .card-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-content {
+    flex: none;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .card-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-link {
+    display: block;
+    color: #4f46e5;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-link:hover {
+    background: #4f46e5;
+    color: white;
+  }
+  
+  .contact-text {
+    font-size: 1rem;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-action {
+    margin-top: 0.5rem;
+  }
+  
+  .action-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .action-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-status {
+    margin-top: 0.5rem;
+  }
+  
+  .status-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+  /* Professional Links Mobile */
+  .professional-links-section-full {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 16px;
+  }
+  
+  .links-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .links-header h4 {
+    font-size: 1.2rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .links-subtitle {
+    font-size: 0.9rem;
+    color: #64748b;
+  }
+  
+  .links-grid-full {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .profile-link-full {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #64748b;
+    transition: all 0.3s ease;
+    gap: 0.75rem;
+  }
+  
+  .profile-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: white;
+  }
+  
+  .profile-content h5 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.25rem;
+  }
+  
+  .profile-content span {
+    font-size: 0.8rem;
+    color: #64748b;
+  }
+  
+  .profile-action {
+    font-size: 0.8rem;
+    color: #94a3b8;
+  }
+  
+  /* CTA Bar Mobile */
+  .cta-bar-full {
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: white;
+    text-align: center;
+  }
+  
+  .cta-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cta-content p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .cta-btn {
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-btn.primary {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  
+  .cta-btn.secondary {
+    background: white;
+    color: #4f46e5;
+  }
+}
+
+/* Extra Small Mobile (480px and below) */
+@media (max-width: 480px) {
+  .contact-info-section-full {
+    padding: 1rem;
+  }
+  
+  .contact-header-modern {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-title-modern {
+    font-size: 1.2rem;
+  }
+  
+  .contact-card-modern {
+    padding: 1.25rem;
+  }
+  
+  .card-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    font-size: 1.4rem;
+  }
+  
+  .contact-link {
+    font-size: 0.9rem;
+    padding: 0.625rem 1.25rem;
+  }
+  
+  .links-grid-full {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 0.75rem;
+  }
+  
+  .profile-link-full {
+    padding: 1.25rem 1rem;
+  }
+  
+  .cta-bar-full {
+    padding: 1.5rem 1rem;
+  }
+  
+  .cta-content h4 {
+    font-size: 1.2rem;
+  }
+  
+  .cta-content p {
+    font-size: 0.9rem;
   }
 }
 
@@ -5805,5 +6102,116 @@ body:not(.loaded)::after {
   .contact-cards-essential-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+  }
+}
+/* Enhanced Mobile Responsive Design for Professional Links */
+@media (max-width: 768px) {
+  .professional-links-section-full {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .links-grid-full {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .profile-link-full {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+  
+  .profile-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+  }
+  
+  .profile-content h5 {
+    font-size: 0.95rem;
+  }
+  
+  .profile-content span {
+    font-size: 0.8rem;
+  }
+  
+  .profile-action {
+    font-size: 0.9rem;
+  }
+  
+  .cta-bar-full {
+    padding: 1.5rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  
+  .cta-content h4 {
+    font-size: 1.3rem;
+  }
+  
+  .cta-content p {
+    font-size: 0.9rem;
+  }
+  
+  .cta-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  
+  .cta-btn {
+    justify-content: center;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .professional-links-section-full {
+    padding: 1rem;
+  }
+  
+  .links-header h4 {
+    font-size: 1rem;
+  }
+  
+  .links-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .profile-link-full {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .profile-content h5 {
+    font-size: 0.9rem;
+  }
+  
+  .profile-content span {
+    font-size: 0.75rem;
+  }
+  
+  .cta-bar-full {
+    padding: 1.25rem;
+  }
+  
+  .cta-content h4 {
+    font-size: 1.2rem;
+  }
+  
+  .cta-content p {
+    font-size: 0.85rem;
+  }
+  
+  .cta-btn {
+    padding: 0.875rem 1.25rem;
+    font-size: 0.9rem;
   }
 }

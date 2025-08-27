@@ -14,7 +14,6 @@ import { Footer } from './components/Footer.js'
 // Import utilities
 import { initializeAnimations } from './utils/animations.js'
 import { initializeNavigation } from './utils/navigation.js'
-import { initializeContactForm } from './utils/contactForm.js'
 
 class Portfolio {
   constructor() {
@@ -45,7 +44,6 @@ class Portfolio {
     // Initialize all interactive features
     initializeNavigation()
     initializeAnimations()
-    initializeContactForm()
     
     // Add loading completion
     document.body.classList.add('loaded')
